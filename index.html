@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 1: Number Form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Number Form</h1>
+      <form class="form-inline" name="numberForm">
+        <div class="form-group">
+          <label for="numbersInput">Enter numbers here:</label>
+          <input type="number" class="form-control" id="numbersInput" name="number">
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="submitForm()">Subimt</button>
+        <button type="reset" class="btn btn-danger" onclick="resetForm()">Reset</button>
+      </form>      
+      <div class="calculation-results">
+        <p>Count: <span id="count">0</span></p>
+        <p>Sum: <span id="sum">0</span></p>
+        <p>Average: <span id="average">0</span></p>
+      </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>  
+  </body>
+</html>
